@@ -1,0 +1,111 @@
+#root{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  margin: 0;
+}
+html,body{
+  background-color: #242424;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+.forms{
+  grid-area: 0/0/1/2;
+  padding: 1vw;
+}
+.data{
+  background-color: white;
+  padding: 1vw;
+  height: calc(100% - 5vh);
+}
+.result{
+  height: 100%;
+  width: 95%;
+  margin: 0;
+}
+.resume{
+  height: 90vh;
+  width: 100%;
+  background-color: rgb(252, 239, 0);
+
+}
+.educationdata,.experiencedata,.personaldata{
+  border-bottom:solid 2px black;
+}
+.educationdata > div,.experiencedata > div{
+  border-bottom: dotted 1px black;
+}
+.educationdata >div:last-child, .experiencedata >div:last-child{
+  border-bottom: none;
+}
+.educationdata > div, .experiencedata > div{
+  height: 8vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4vh 4vh;
+}
+.personaldata > div{
+  display:  grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+}
+.p1{
+  grid-area: 1/1/1/4;
+}
+.p2{
+  grid-area: 2/1/2/4;
+}
+.p3{
+  grid-area: 1/4/2/6;
+}
+h3{
+  text-decoration: underline 2px;
+}
+.resume > h1{
+  margin: 1vh;
+  height: 5vh;
+  color: black;
+}
+h1{
+  color: white;
+  margin: 0;
+}
+label{
+  color: white;
+  display: block;
+  margin: 0.2vh;
+}
+input,button{
+  background-color: #282727;
+  border: solid white 1px;
+  border-radius: 10px;
+  color: white;
+  height: 3vh;
+}
+button{
+  height: 4vh;
+  width: 10vh;
+}
+.form > button{
+  height: 4vh;
+  width: 10vh;
+}
+.form > div{
+  display: grid;
+  gap: 0.5vh;
+}
+.form{
+  background-color: #393737;
+  border-radius: 5px;
+  display: flex;
+  max-width: 50vw;
+  padding: 0.3vw;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1vh;
+}
+#general > div > input{
+  width: 80%;
+}
