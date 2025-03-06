@@ -31,15 +31,15 @@ return (
                 {Object.entries(experiencedata).map((x) => (
                         <div id={x[0]}>
                             <div id={x[0]} className="form">
-                                <div id={x[0]}>
+                                <div id={x[0]} className="p1">
                                     <label htmlFor="company">Company</label>
                                     <input type="text" id="company" placeholder="Google" onChange={newData} />
                                 </div>
-                                <div id={x[0]}>
+                                <div id={x[0]} className="p2">
                                     <label htmlFor="position" >position</label>
                                     <input type="text" id="position" placeholder="manager" onChange={newData} />
                                 </div>
-                                <div id={x[0]}>
+                                <div id={x[0]} className="p3">
                                     <label htmlFor="dateofwork">date of work</label>
                                     <input type="text" id="dateofwork" placeholder="2020-2024" onChange={newData} />
                                 </div>
